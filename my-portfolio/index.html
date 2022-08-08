@@ -20,17 +20,17 @@
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-link active">Главная</a>
+            <a href="#main" class="nav-link active">Главная</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Проекты</a></li>
+          <li class="nav-item"><a href="#developer" class="nav-link">Обо мне</a></li>
+          <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
         </ul>
       </nav>
     </div>
 
     <!-- navbar_end -->
-    <header class="header container">
+    <header class="header container" id="main">
       <img src="./img/5.png" class="header-photo" alt="Сергей" />
       <!-- /.header-photo -->
       <div class="header-text">
@@ -82,7 +82,7 @@
       <!-- /.header-text -->
     </header>
     <!-- header_end -->
-    <section class="porfolio">
+    <section class="porfolio" id="portfolio">
       <div class="container">
         <h2 class="section-heading">Последние проекты</h2>
         <div class="cards">
@@ -163,7 +163,7 @@
       </div>
     </section>
     <!-- end section -->
-    <section class="developer container">
+    <section class="developer container" id="developer">
       <img
         src="./img/developer_photo.png"
         alt="Sergey"
@@ -187,7 +187,7 @@
     </section>
     <!-- developer container -->
 
-    <section class="skills container">
+    <section class="skills container" id="skills">
       <h2 class="skills-title">Работаю с разными языками и инструментами</h2>
       <ul class="tags">
         <li class="tags-item"><a href="#" class="tag">HTML</a></li>
@@ -202,31 +202,34 @@
       </ul>
     </section>
     <!-- skills -->
-    <section class="feedback form-container">
-      <h2 class="feedback-title">Готов обсудить проект</h2>
-      <form action="#" class="form">
-        <div class="input-group">
-          <label for="userName" class="input-label">Имя</label>
-          <input id="userName" type="text" class="input" />
-        </div>
-        <div class="input-group">
-          <label for="Email" class="input-label">Email</label>
-          <input id="Email" type="text" class="input" />
-        </div>
-        <div class="input-group">
-          <label for="userMessage" class="input-label">Сообщение</label>
-          <textarea id="userMessage" class="input textarea"></textarea>
-        </div>
-        <div class="btn-group">
-          <button type="submit" class="submit-btn">
-            <img
-              src="./img/Icons/send.svg"
-              alt="send icon"
-              class="cv-icon"
-            /><span class="cv-text">Отправить</span>
-          </button>
-        </div>
-      </form>
+    <section class="feedback" id="feedback">
+      <img src="./img/hand.png" alt="hand" class="feedback-hand" />
+      <div class="form-container">
+        <h2 class="feedback-title">Готов обсудить проект</h2>
+        <form action="#" class="form">
+          <div class="input-group">
+            <label for="userName" class="input-label">Имя</label>
+            <input id="userName" type="text" class="input" />
+          </div>
+          <div class="input-group">
+            <label for="Email" class="input-label">Email</label>
+            <input id="Email" type="text" class="input" />
+          </div>
+          <div class="input-group">
+            <label for="userMessage" class="input-label">Сообщение</label>
+            <textarea id="userMessage" class="input textarea"></textarea>
+          </div>
+          <div class="btn-group">
+            <button type="submit" class="submit-btn">
+              <img
+                src="./img/Icons/send.svg"
+                alt="send icon"
+                class="cv-icon"
+              /><span class="cv-text">Отправить</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>
